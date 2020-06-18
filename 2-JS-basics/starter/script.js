@@ -73,11 +73,34 @@ console.log(typeof x);
 
 
 
- /***Operator Precedence***/
- 
+ /***Operator Precedence***/ 
+var now = 2018;
+var year = 1989;
+var fullAge = 18;
+//Multiple Operators
+var isFullAge = now - year >= fullAge; //true
+console.log(isFullAge); 
 
+//Grouping
+var ageJohn = now - year
+var ageMark = 35
+var average = (ageJohn + ageMark) / 2 ; //32
+console.log(average); 
 
+//Multiple Assignments
+var x, y;
+x=y= (3 +5) * 4 - 6; // 8*4 - 6//32 - 6 //26
+console.log(x,y); //y isnt undefined because the precedent for the assignment operators worked from right to left. y = 26 first then x = y
 
+//More operators
+x *= 2; 
+console.log(x);
+x += 10;
+console.log(x);
+x++; 
+console.log(x);
+x--; 
+console.log(x);
 
 
 
