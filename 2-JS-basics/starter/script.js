@@ -74,24 +74,25 @@ console.log(typeof x);
 
 
  /***Operator Precedence***/ 
+ /*
 var now = 2018;
 var year = 1989;
 var fullAge = 18;
 //Multiple Operators
 var isFullAge = now - year >= fullAge; //true
 console.log(isFullAge); 
-
+/*
 //Grouping
 var ageJohn = now - year
 var ageMark = 35
 var average = (ageJohn + ageMark) / 2 ; //32
 console.log(average); 
-
+/*
 //Multiple Assignments
 var x, y;
 x=y= (3 +5) * 4 - 6; // 8*4 - 6//32 - 6 //26
 console.log(x,y); //y isnt undefined because the precedent for the assignment operators worked from right to left. y = 26 first then x = y
-
+/*
 //More operators
 x *= 2; 
 console.log(x);
@@ -101,8 +102,21 @@ x++;
 console.log(x);
 x--; 
 console.log(x);
+*/
+var heightJohn, heightMark, weightJohn, weightMark;
+heightJohn = 1.75 ;
+heightMark = 1.65;
+weightJohn = 100;
+weightMark = 98;
 
+var bmiMark, bmiJohn, isHigherBMI; 
+bmiMark = weightMark/(heightMark**2); //36
+bmiJohn = weightJohn/(heightJohn**2); //32.7
+isHigherBMI = bmiMark > bmiJohn // True
 
+console.log(isHigherBMI); 
+
+console.log("Is Mark's BMI higher than John's?"+ " " + isHigherBMI); 
 
 
 
