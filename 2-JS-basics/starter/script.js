@@ -1,6 +1,4 @@
 
-
-
 /****
  Variable and Data types 
  * 
@@ -20,6 +18,10 @@ console.log(job);
 
 job = 'Teacher';
 console.log(job); 
+
+
+
+
 
 
 /*****
@@ -47,6 +49,13 @@ var lastName = prompt('What is his last name?');
 console.log(firstName + ' ' + lastName); 
 
 
+
+
+
+
+
+
+
 /***
  * Basic Operators
  * ***/
@@ -70,6 +79,15 @@ console.log(johnOlder);
 console.log(typeof johnOlder); 
 console.log(typeof 'Mark is Older than John');
 console.log(typeof x);
+
+
+
+
+
+
+
+
+
 
 
 
@@ -104,9 +122,12 @@ x--;
 console.log(x);
 */
 
-/**
- * Coding Challenge 1
- */
+
+
+
+
+
+/*** Coding Challenge 1 ***/
 /*
 var heightJohn, heightMark, weightJohn, weightMark;
 heightJohn = 1.75 ;
@@ -124,10 +145,19 @@ console.log(isHigherBMI);
 console.log('Is Mark\'s BMI higher than John\'s?'+ " " + isHigherBMI); 
 */
 
-/**
- * IF/ELSE Statements
- */
 
+
+
+
+
+
+
+
+
+
+
+/***IF/ELSE Statements****/
+/*
  var firstName = 'John';
  var civilStatus = 'single';
 
@@ -143,8 +173,6 @@ if (isMarried) {
 } else {
     console.log(firstName + ' will hopefully marry soon.');
 }
-
-
 var heightJohn, heightMark, weightJohn, weightMark;
 heightJohn = 1.75 ;
 heightMark = 1.65;
@@ -160,6 +188,7 @@ if (bmiMark > bmiJohn){
 } else {
     console.log('John\'s BMI is higher than Mark\'s');
 }
+*/
 
 
 
@@ -167,6 +196,83 @@ if (bmiMark > bmiJohn){
 
 
 
+//******* Boolean Logic ******/
+
+/*
+
+var firstName = 'John';
+var age = 21;
+
+if (age < 13) {
+    console.log(firstName + ' is a boy');
+} else if (age >= 13 && age < 20 ) { //between 13 and 20. Both need to be TRUE
+    console.log(firstName + ' is a teenager');
+} else if(age >= 20 && age < 30) {
+    console.log(firstName + ' is a young man');
+} else {
+    console.log(firstName + ' is a man');
+}
 
 
 
+//******* Ternary Operator and Switch Statements******/
+/*
+var firstName = 'John';
+var age = 21;
+
+age >= 18 ? console.log(firstName + ' drinks beer')
+: console.log(firstName + ' drinks juice');
+
+var drink =  age >= 18 ? 'beer' : 'juice'; 
+console.log(drink); 
+
+//Switch Statement
+var job = 'instructor';
+switch(job) {
+    case 'teacher':
+    case 'instructor':
+        console.log(firstName + ' teaches kids to code');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives an uber');
+        break;
+    case 'desinger':
+        console.log(firstName + ' designs beautiful websites');
+        break;
+    default:
+        console.log(firstName + ' does something else');
+}
+
+var age = 10; 
+switch(true) {
+    case age < 13:
+        console.log(firstName + ' is a boy');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + ' is a young man');
+        break;
+    default:
+        console.log(firstName + ' is a man');
+}
+*/
+
+//*** Truthy and Falsy Values and Equality Operators ***/
+/*
+var height; //undefined is a falsy value
+height = 23; // defined is truthy
+if (height || height === 0) { //height is defined or 0
+    console.log('variable is defined');
+}else {
+    console.log('Variable has NOT been defined');
+}
+
+
+//Equality operators
+if (height == "23") {
+    console.log('the == operator does type coercion');
+} 
+
+//** Coding Challenge 2 */
