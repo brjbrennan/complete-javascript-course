@@ -1,4 +1,3 @@
-
 /****
  Variable and Data types 
  * 
@@ -91,8 +90,8 @@ console.log(typeof x);
 
 
 
- /***Operator Precedence***/ 
- /*
+ /***Operator Precedence***/
+/*
 var now = 2018;
 var year = 1989;
 var fullAge = 18;
@@ -122,11 +121,6 @@ x--;
 console.log(x);
 */
 
-
-
-
-
-
 /*** Coding Challenge 1 ***/
 /*
 var heightJohn, heightMark, weightJohn, weightMark;
@@ -144,17 +138,6 @@ console.log(isHigherBMI);
 
 console.log('Is Mark\'s BMI higher than John\'s?'+ " " + isHigherBMI); 
 */
-
-
-
-
-
-
-
-
-
-
-
 
 /***IF/ELSE Statements****/
 /*
@@ -190,12 +173,6 @@ if (bmiMark > bmiJohn){
 }
 */
 
-
-
-
-
-
-
 //******* Boolean Logic ******/
 
 /*
@@ -221,14 +198,14 @@ var firstName = 'John';
 var age = 21;
 
 age >= 18 ? console.log(firstName + ' drinks beer')
-: console.log(firstName + ' drinks juice');
+    : console.log(firstName + ' drinks juice');
 
-var drink =  age >= 18 ? 'beer' : 'juice'; 
-console.log(drink); 
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
 
 //Switch Statement
 var job = 'instructor';
-switch(job) {
+switch (job) {
     case 'teacher':
     case 'instructor':
         console.log(firstName + ' teaches kids to code');
@@ -243,8 +220,8 @@ switch(job) {
         console.log(firstName + ' does something else');
 }
 
-var age = 10; 
-switch(true) {
+var age = 10;
+switch (true) {
     case age < 13:
         console.log(firstName + ' is a boy');
         break;
@@ -276,3 +253,26 @@ if (height == "23") {
 } 
 
 //** Coding Challenge 2 */
+
+//Johns team scored 89, 120, and 103 points
+//Marks team scored 116, 94, and 123 points
+//Marys team 97, 134, 105 points
+//Calculate average score for each team and what team has the highest average score
+var johnTeamScore, markTeamScore, maryTeamScore;
+var winner = johnTeamScore || maryTeamScore || maryTeamScore;
+johnTeamScore = (89 + 120 + 103) / 3;
+markTeamScore = (116 + 94 + 123) / 3;
+maryTeamScore = (97 + 134 + 105) / 3;
+console.log(markTeamScore, johnTeamScore, maryTeamScore);
+
+switch (winner) {
+  case johnTeamScore > maryTeamScore && markTeamScore:
+    console.log("John's team wins!");
+    break;
+  case maryTeamScore > johnTeamScore && markTeamScore:
+    console.log("Mary's team wins!");
+    break;
+  case markTeamScore > johnTeamScore && markTeamScore:
+    console.log("Mark's Team Wins!");
+    break;
+}
