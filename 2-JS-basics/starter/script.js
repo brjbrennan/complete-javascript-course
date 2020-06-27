@@ -1,6 +1,6 @@
 /****
- Variable and Data types 
- * 
+ Variable and Data types
+ *
  **********/
 /*
 var firstName = 'John';
@@ -16,7 +16,7 @@ var job;
 console.log(job);
 
 job = 'Teacher';
-console.log(job); 
+console.log(job);
 
 
 
@@ -28,7 +28,7 @@ console.log(job);
  ****/
 /*
 var firstName = 'John';
-var age = 28; 
+var age = 28;
 
 console.log(firstName + ' ' + age)
 
@@ -36,16 +36,16 @@ var job, isMarried;
 job = 'Teacher'
 isMarried = false
 
-console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried); 
+console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
 
 //Variable Mutation
 age = 'twenty eight';
 job = 'Driver';
 
-alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried); 
+alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
 
-var lastName = prompt('What is his last name?'); 
-console.log(firstName + ' ' + lastName); 
+var lastName = prompt('What is his last name?');
+console.log(firstName + ' ' + lastName);
 
 
 
@@ -65,17 +65,17 @@ ageJohn = 28
 ageMark = 33
 //math operators
 yearJohn = year - ageJohn;
-yearMark = year - ageMark; 
-console.log(yearJohn); 
-console.log(year + 2); 
-console.log(year / 10); 
+yearMark = year - ageMark;
+console.log(yearJohn);
+console.log(year + 2);
+console.log(year / 10);
 
 //logical operators
 var johnOlder = ageJohn > ageMark;
-console.log(johnOlder); 
+console.log(johnOlder);
 
 // typeof operator
-console.log(typeof johnOlder); 
+console.log(typeof johnOlder);
 console.log(typeof 'Mark is Older than John');
 console.log(typeof x);
 
@@ -97,13 +97,13 @@ var year = 1989;
 var fullAge = 18;
 //Multiple Operators
 var isFullAge = now - year >= fullAge; //true
-console.log(isFullAge); 
+console.log(isFullAge);
 /*
 //Grouping
 var ageJohn = now - year
 var ageMark = 35
 var average = (ageJohn + ageMark) / 2 ; //32
-console.log(average); 
+console.log(average);
 /*
 //Multiple Assignments
 var x, y;
@@ -111,13 +111,13 @@ x=y= (3 +5) * 4 - 6; // 8*4 - 6//32 - 6 //26
 console.log(x,y); //y isnt undefined because the precedent for the assignment operators worked from right to left. y = 26 first then x = y
 /*
 //More operators
-x *= 2; 
+x *= 2;
 console.log(x);
 x += 10;
 console.log(x);
-x++; 
+x++;
 console.log(x);
-x--; 
+x--;
 console.log(x);
 */
 
@@ -129,14 +129,14 @@ heightMark = 1.65;
 weightJohn = 100;
 weightMark = 98;
 
-var bmiMark, bmiJohn, isHigherBMI; 
+var bmiMark, bmiJohn, isHigherBMI;
 bmiMark = weightMark/(heightMark**2); //36
 bmiJohn = weightJohn/(heightJohn**2); //32.7
 isHigherBMI = bmiMark > bmiJohn // True
 
-console.log(isHigherBMI); 
+console.log(isHigherBMI);
 
-console.log('Is Mark\'s BMI higher than John\'s?'+ " " + isHigherBMI); 
+console.log('Is Mark\'s BMI higher than John\'s?'+ " " + isHigherBMI);
 */
 
 /***IF/ELSE Statements****/
@@ -162,7 +162,7 @@ heightMark = 1.65;
 weightJohn = 100;
 weightMark = 98;
 
-var bmiMark, bmiJohn, isHigherBMI; 
+var bmiMark, bmiJohn, isHigherBMI;
 bmiMark = weightMark/(heightMark**2); //36
 bmiJohn = weightJohn/(heightJohn**2); //32.7
 
@@ -246,33 +246,60 @@ if (height || height === 0) { //height is defined or 0
     console.log('Variable has NOT been defined');
 }
 
-
 //Equality operators
 if (height == "23") {
     console.log('the == operator does type coercion');
-} 
+}
 
 //** Coding Challenge 2 */
-
+/*
 //Johns team scored 89, 120, and 103 points
 //Marks team scored 116, 94, and 123 points
 //Marys team 97, 134, 105 points
 //Calculate average score for each team and what team has the highest average score
 var johnTeamScore, markTeamScore, maryTeamScore;
-var winner = johnTeamScore || maryTeamScore || maryTeamScore;
-johnTeamScore = (89 + 120 + 103) / 3;
-markTeamScore = (116 + 94 + 123) / 3;
-maryTeamScore = (97 + 134 + 105) / 3;
+johnTeamScore = (1 + 1 + 1) / 3;
+markTeamScore = (12 + 1 + 1) / 3;
+maryTeamScore = (50 + 1 + 1) / 3;
 console.log(markTeamScore, johnTeamScore, maryTeamScore);
 
-switch (winner) {
-  case johnTeamScore > maryTeamScore && markTeamScore:
-    console.log("John's team wins!");
-    break;
-  case maryTeamScore > johnTeamScore && markTeamScore:
-    console.log("Mary's team wins!");
-    break;
-  case markTeamScore > johnTeamScore && markTeamScore:
-    console.log("Mark's Team Wins!");
-    break;
+if (johnTeamScore > markTeamScore && johnTeamScore > maryTeamScore) {
+    console.log("John's team wins with " + ' points!');
+} else if (markTeamScore > johnTeamScore && markTeamScore > maryTeamScore) {
+    console.log("Mark's team wins with " + markTeamScore + ' points!');
+} else if (maryTeamScore > johnTeamScore && maryTeamScore > markTeamScore) {
+    console.log("Mary's team wins with " + maryTeamScore + ' points!');
+} else {
+    console.log('Everyone is tied!');
 }
+
+*/
+
+//** Functions */
+/*
+function calculateAge(birthyear) {
+    return 2020 - birthyear;
+}
+
+var ageJohn = calculateAge(1986);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+console.log(ageJohn, ageMike, ageJane);
+
+
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' is retired');
+    }
+}
+
+yearsUntilRetirement(1986, 'Brian');
+yearsUntilRetirement(1948, 'Mike');
+yearsUntilRetirement(1969, 'Jane');
+*/
+
+//**  */
